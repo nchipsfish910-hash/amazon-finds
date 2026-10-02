@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Amazon Finds | Beauty, Fashion & More</title>
+
+<meta name="description" content="Discover affordable and trending Amazon finds including beauty, fashion, skincare, accessories and everyday essentials.">
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f3ed;
+        color: #34342f;
+        line-height: 1.5;
+    }
+
+    header {
+        background: #ffffff;
+        padding: 28px 20px;
+        text-align: center;
+        border-bottom: 1px solid #e5ded3;
+    }
+
+    header h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        color: #34342f;
+    }
+
+    header p {
+        margin-top: 8px;
+        color: #77736d;
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 15px;
+        background: #eee9df;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #34342f;
+        padding: 8px 14px;
+        border-radius: 20px;
+        background: white;
+        font-size: 13px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 45px 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .hero p {
+        color: #77736d;
+        font-size: 15px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin: 10px 20px 25px;
+        font-size: 24px;
+    }
+
+    .products {
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 20px 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 22px;
+    }
+
+    .product {
+        background: white;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+        transform: translateY(-4px);
+    }
+
+    .product-image {
+        height: 230px;
+        background: #f0e8df;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+    }
+
+    .product-info {
+        padding: 18px;
+    }
+
+    .category {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #8a6458;
+        font-weight: bold;
+    }
+
+    .product h3 {
+        margin: 7px 0;
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .description {
+        font-size: 13px;
+        color: #77736d;
+        margin-bottom: 12px;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+
+    .amazon-btn {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background: #34342f;
+        color: white;
+        padding: 11px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .amazon-btn:hover {
+        background: #55554d;
+    }
+
+    .disclosure {
+        max-width: 750px;
+        margin: 0 auto 35px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 11px;
+        color: #88847e;
+    }
+
+    footer {
+        background: #34342f;
+        color: white;
+        text-align: center;
+        padding: 25px 15px;
+        font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 27px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+        }
+
+        .products {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .product-image {
+            height: 170px;
+        }
+
+        .product-info {
+            padding: 13px;
+        }
+
+        .product h3 {
+            font-size: 14px;
+        }
+
+        .description {
+            font-size: 12px;
+        }
+
+        .price {
+            font-size: 15px;
+        }
+
+        .amazon-btn {
+            font-size: 12px;
+            padding: 9px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>AMAZON FINDS</h1>
+    <p>Pretty finds. Smart buys. Everyday essentials.</p>
+</header>
+
+<nav>
+    <a href="#all">All Finds</a>
+    <a href="#beauty">Beauty</a>
+    <a href="#fashion">Fashion</a>
+    <a href="#skincare">Skincare</a>
+</nav>
+
+<section class="hero">
+    <h2>Things worth adding to your cart ✨</h2>
+    <p>
+        A curated collection of affordable and trending Amazon finds
+        for beauty, fashion, skincare and everyday life.
+    </p>
+</section>
+
+<h2 class="section-title" id="all">Latest Finds</h2>
+
+<section class="products">
+
+    <!-- PRODUCT 1 -->
+    <div class="product" id="beauty">
+        <div class="product-image">
+            💄
+        </div>
+
+        <div class="product-info">
+            <span class="category">Beauty</span>
+
+            <h3>Maybelline Sky High Waterproof Mascara</h3>
+
+            <p class="description">
+                Lengthening and volumizing mascara with bamboo extract
+                and fibres.
+            </p>
+
+            <div class="price">Check latest price</div>
+
+            <a class="amazon-btn"
+               href="https://amzn.in/d/0bcOkJOL"
+               target="_blank"
+               rel="nofollow sponsored noopener">
+                Check Price on Amazon
+            </a>
+        </div>
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+    <div class="product" id="beauty">
+        <div class="product-image">
+            ✨
+        </div>
+
+        <div class="product-info">
+            <span class="category">Beauty</span>
+
+            <h3>L'Oréal Paris Infaillible Setting Mist</h3>
+
+            <p class="description">
+                Quick-drying setting mist designed for long-lasting,
+                transfer-resistant makeup.
+            </p>
+
+            <div class="price">Check latest price</div>
+
+            <a class="amazon-btn"
+               href="https://amzn.in/d/0eN9K3uH"
+               target="_blank"
+               rel="nofollow sponsored noopener">
+                Check Price on Amazon
+            </a>
+        </div>
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+    <div class="product" id="fashion">
+        <div class="product-image">
+            👗
+        </div>
+
+        <div class="product-info">
+            <span class="category">Fashion</span>
+
+            <h3>Polka Dot Halter Long Dress</h3>
+
+            <p class="description">
+                A stylish halter-neck long dress with a flattering
+                A-line silhouette, available in different colours.
+            </p>
+
+            <div class="price">Check latest price</div>
+
+            <a class="amazon-btn"
+               href="#"
+               target="_blank"
+               rel="nofollow sponsored noopener">
+                Check Price on Amazon
+            </a>
+        </div>
+    </div>
+
+
+    <!-- PRODUCT 4 -->
+    <div class="product" id="skincare">
+        <div class="product-image">
+            🧴
+        </div>
+
+        <div class="product-info">
+            <span class="category">Skincare</span>
+
+            <h3>Trending Skincare Find</h3>
+
+            <p class="description">
+                Discover skincare products and everyday beauty essentials
+                worth checking out.
+            </p>
+
+            <div class="price">Check latest price</div>
+
+            <a class="amazon-btn"
+               href="#"
+               target="_blank"
+               rel="nofollow sponsored noopener">
+                Check Price on Amazon
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<div class="disclosure">
+    <p>
+        Disclosure: As an Amazon Associate, I earn from qualifying purchases.
+        Prices and availability may change on Amazon.
+    </p>
+</div>
+
+<footer>
+    <p>© 2026 Amazon Finds</p>
+    <p>Curated finds for your everyday shopping ✨</p>
+</footer>
+
+</body>
+                                                   </html>
